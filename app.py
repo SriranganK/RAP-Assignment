@@ -14,7 +14,7 @@ model = tf.keras.models.load_model('./handwritten10-epoch.model')
 def upload():
     if request.method == 'POST':
         # Get the uploaded file from the request
-        file = request.files['image']
+        file = request.files['rapidvs']
         # Save the file to a temporary location on the server
         filename = 'temp.jpg'
         file.save(filename)
@@ -30,6 +30,12 @@ def upload():
         return render_template('success.html', prediction=pred)
     # If the request method is GET, display the upload form
     return render_template('index.html')
+@app.route('/about')
+def about():
+    return render_template('about.html')
+@app.route('/aboutus')
+def about_us():
+    return render_template('about_us.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
