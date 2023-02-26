@@ -29,16 +29,19 @@
               <li class="nav-item">
                 <a class="nav-link" style="color:white;" href="/aboutus">About US</a>
               </li>
+
              
             </ul>
             
             <div class = 'logo'>
                 <img src="https://i.postimg.cc/LsKJ8FKs/logo-3f4ea69e289617b32787803e454771e7.png" alt="Girl in a jacket" width="50" height="50">
-            
           </div>
           </div>
         </div>
-      </header>
+      </header><br>
+      <div class ="viewm">
+      <center><h1>Best View in Desktop Mode to Use all features</h1></center>
+    </div>
       <section class="py-5 text-center container">
         <div class="row py-lg-5">
           <div class="col-lg-12 col-md-14 mx-auto">
@@ -68,11 +71,11 @@
           <i class="fas fa-file-pdf" data-fa-transform="shrink-3 down-2 right-6 rotate-45"></i>
         </div>
         <!--<input type="file" id="file-upload">-->
-        <form  method="post" enctype="multipart/form-data">
+        <form action="/upload" method="post" enctype="multipart/form-data">
           <p>Choose the Image to Predict</p>
           
 
-          <input type="file" name ="rapidvs" id="imageUpload" accept="image/*" class="position-absolute invisible">
+          <input  type="file" name ="rapidvs" id="imageUpload" accept="image/*" class="position-absolute invisible">
           
           <label for="imageUpload" class="btn btn-primary">Choose a file</label>
           <br>
@@ -159,6 +162,9 @@ $("#file-browser").click(function(e) {
   display:inline;
   margin-right:-22rem;
   
+}
+.viewm{
+  display:none;
 }
 
 .border-container {
@@ -428,6 +434,27 @@ figure.snip0056:hover > img,
 figure.snip0056.hover > img {
   right: -12%;
 }
+
+@media screen and (max-width: 768px) {
+
+.about{
+  display:block;
+  margin-left: -2rem;
+}
+
+.logo{
+  display: none;
+}
+.nav-link {
+  display:none;
+  
+}
+.viewm{
+  display:block;
+}
+}
+
+
 </style>
 <script>
   const imageUpload = document.getElementById('imageUpload');
