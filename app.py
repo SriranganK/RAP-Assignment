@@ -2,12 +2,11 @@ from flask import Flask, request, render_template
 import tensorflow as tf
 import numpy as np
 import cv2 as cv
-
 from PIL import Image
 import base64
 import pymongo
 from io import BytesIO
-import os
+
 app = Flask(__name__)
 
 connection_string = "mongodb+srv://rap:rap@cluster0.3iayb.mongodb.net/?retryWrites=true&w=majority"
