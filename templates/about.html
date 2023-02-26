@@ -44,8 +44,16 @@
         <div class="row py-lg-5">
           <div class="col-lg-12 col-md-14 mx-auto">
             <h1 class="fw-light text-center">Handwritten Digit Classifier</h1><br><br>
-            <p class="lead text-muted"><center>Trained the model using <b>CNN by MNIST</b> toy dataset in the <b>Tensorflow</b> framework, the model was trained. The dataset was normalised to range from 0.0 to 1.0. To classify the digit, a model with three convolutional layers, 64 filters, and a 3,3 kernal size was created. The layer was then flattened and given to the full connected layer. The <b>L2 Regularization, Drop Outing layers, and Batch normailzation </b>procedures were used to <b>combat overfitting</b> that occurred during the training phase of the model. S  saved in H5 format, <b>Flask</b> Web server was built, and a user interface was provided for uploading images that would be saved as temporary image files. The image was then preprocessed using <b>OpenCV</b> and resized to be 28x28 pixels, and passed to the trained then the output from model showed in frontend. <b>Hosted in Amazon Web Services EC2 (AWS)</b> <b><br><br>Accuracy of model: 98%<br> Validation Accuaracy : 97.2%.</b> </center></p>
+            <p class="lead text-muted"><center>The model is trained using CNN by MNIST toy dataset in the Tensorflow framework,The dataset was normalised from (0-255) to (0.0-1.0).To classify the digit, a model with three convolutional layers, 64 filters, and a 3,3 kernal size was created.The layer was then flattened and given to the fully connected layer. The L2 Regularization, Drop Outing layers, and Batch normailzation are used to combat overfitting that occurred during the training phase of the model. In the end of the training saved as H5 format,Then Flask Web server was built with user-interface for uploading images will saved in  MongoDB collection. Then Image from MongoDb is retrived and preprocessed using OpenCV and resized.Then image is passed to the trained model, Finally the output from model showed in frontend. Hosted in AWS EC2 </b> <b><br><br>Accuracy of model: 98%<br> Validation Accuaracy : 97.2%.</b> </center></p>
             <br><br>
+            <b>Technologies & Framework Used:</b>
+            <br>
+              &#x2022; Python ( Flask, Tensorflow, OpenCV, Pymongo, Numpy )<br>
+              &#x2022; MongoDb<br>
+              &#x2022; AWS EC2<br>
+              
+            
+
             <p>
                 <br>
             <center>  <a href="https://github.com/SriranganK/RAP-Assignment" class="btn btn-primary my-2">GitHub</a></center>
