@@ -5,4 +5,4 @@ opencv-python
 Pillow
 gunicorn
 pymongo
-base64
+
