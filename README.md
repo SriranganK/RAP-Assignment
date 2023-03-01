@@ -14,9 +14,9 @@ Image Selection Area: ![2](https://i.postimg.cc/v8vxLBbj/51c9c7de-1b81-4c95-9718
 Image Preview: ![2](https://i.postimg.cc/nVdchQHH/0990896c-cd76-4a4f-8a63-3bc988185acf.jpg)
 Predicated Result Page: ![2](https://i.postimg.cc/GhYNSZgZ/3ea2bce0-6015-40ff-bfea-42642149c67d.jpg)
 About Page:![2](https://i.postimg.cc/RZ4PpqHH/0b865ac7-090d-4f1c-a121-92ba1e42c73d.jpg)
-About Us Page![2](https://i.postimg.cc/vmDtCnHc/adef91e9-a98a-4093-a39f-86f1f406e477.jpg)
 MongoDB Cluster:![1](https://i.postimg.cc/JhY6m8Dd/b47c3e9e-982e-49fd-bca1-2e9109098849.jpg)
 AWS EC2 instance:![1](https://i.postimg.cc/9QZCrxtp/image.png)
+About Us Page![2](https://i.postimg.cc/vmDtCnHc/adef91e9-a98a-4093-a39f-86f1f406e477.jpg)
 ## Technologies & Framework Used:
 * Python ( Flask, Tensorflow, OpenCV, Pymongo, Numpy )
 * MongoDb 
