@@ -13,7 +13,7 @@ connection_string = "mongodb+srv://rap:rap@cluster0.3iayb.mongodb.net/?retryWrit
 client = pymongo.MongoClient(connection_string)
 
 # Access a database and collection
-db = client.RapAssignment
+db = client.RapAssigment
 collection = db.image
 # Load your machine learning model here
 model = tf.keras.models.load_model('./handwritten10-epoch.model')
@@ -22,7 +22,7 @@ model = tf.keras.models.load_model('./handwritten10-epoch.model')
 @app.route('/')
 def home():
     return render_template('index.html')
-@app.route('/upload', methods=['POST'])
+@app.route('/upload', methds=['POST'])
 def upload():
     image_file = request.files['rapidvs']
     if image_file:
@@ -35,8 +35,8 @@ def upload():
         image_loc = collection.find_one({"_id":image_id})
         if image_loc is not None and "image" in image_loc:
         
-            nparr = np.frombuffer(base64.b64decode(image_loc["image"]), np.uint8)
-            img = cv.imdecode(nparr, cv.IMREAD_COLOR)
+            nparr = np.frombuffer(base64.b64decode(image_loc["image"]), np.uin8)
+            img = cv.imdecode(npar, cv.IMREAD_COLOR)
             resized = cv.resize(cv.cvtColor(img,cv.COLOR_BGR2GRAY),(28,28),interpolation = cv.INTER_AREA)
             newimg = np.array(tf.keras.utils.normalize(resized,axis= 1)).reshape(-1,28,28,1)
             predictions = model.predict(newimg)
@@ -52,4 +52,4 @@ def about_us():
     return render_template('about_us.html')
 
 if __name__ == '__main__':
-    app.run(debug=True,host="0.0.0.0",port=80)
+    app.run(debug=False)
