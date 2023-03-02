@@ -28,7 +28,7 @@ def upload():
     if image_file:
        
         image_data = image_file.read()
-        image_doc = {"image": base64.b64encode(image_data).decode()}
+        image_doc = {"image": bs64.b64encode(image_data).decode()}
  
         image_id = collection.insert_one(image_doc).inserted_id
      
